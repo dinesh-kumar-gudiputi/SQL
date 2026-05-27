@@ -1,0 +1,12 @@
+# macOS Files
+.DS_Store
+
+# VS Code Settings
+.vscode/
+
+# Temporary Files
+*.tmp
+*.log
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
