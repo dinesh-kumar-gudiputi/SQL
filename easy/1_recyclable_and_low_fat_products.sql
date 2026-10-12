@@ -15,3 +15,4 @@ Sample schema and input: fixtures/1_recyclable_and_low_fat_products.sql
 At the repository root, start sqlite3, then load the fixture and this query
 in the same connection using .read. Write your own query below this comment.
 */
+d
