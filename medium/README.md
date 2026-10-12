@@ -1,6 +1,6 @@
 # Medium SQL questions
 
-Each question belongs to its source difficulty. The other level folders contain different questions.
+Each question belongs to its source difficulty. The other level folders contain different questions. Question numbering continues across the entire repository, including all difficulty folders.
 
 | Number | Question file |
 | --- | --- |

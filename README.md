@@ -23,13 +23,13 @@ Each question is stored **once**, under its LeetCode difficulty. Easy, medium an
 
 ## File names
 
-Use the problem number, padded to four digits, followed by the question name:
+Start question numbering at 1 and continue within this repository, followed by the question name:
 
 ```text
-easy/0584_find_customer_referee.sql
+easy/2_find_customer_referee.sql
 ```
 
-The number is the source problem ID, not a daily sequence. There are no date folders. New question files contain the task, source link, example and starter code. The current starter files are intentionally unimplemented.
+The filename number is your own question sequence. PYTHON and SQL each have an independent counter. Continue the counter across easy, medium and hard; do not restart it when changing difficulty. Keep the source platform's problem ID in the file's source information. There are no date folders. New question files contain the task, source link, example and starter code. The current starter files are intentionally unimplemented.
 
 ## Start in VS Code
 
@@ -41,17 +41,17 @@ The number is the source problem ID, not a daily sequence. There are no date fol
 
 When both daily repositories are open, select the matching repository in Source Control before committing. The mentor does not automatically upload your daily solutions.
 
-Example commit: `practice: solve 0584 find customer referee`
+Example commit: `practice: solve question 2 find customer referee`
 
 ## First prepared questions
 
 | Number | Question file |
 | --- | --- |
-| 0584 | [Find Customer Referee](easy/0584_find_customer_referee.sql) |
-| 0595 | [Big Countries](easy/0595_big_countries.sql) |
-| 1148 | [Article Views I](easy/1148_article_views_i.sql) |
-| 1683 | [Invalid Tweets](easy/1683_invalid_tweets.sql) |
-| 1757 | [Recyclable and Low Fat Products](easy/1757_recyclable_and_low_fat_products.sql) |
+| 1 | [Recyclable and Low Fat Products](easy/1_recyclable_and_low_fat_products.sql) |
+| 2 | [Find Customer Referee](easy/2_find_customer_referee.sql) |
+| 3 | [Big Countries](easy/3_big_countries.sql) |
+| 4 | [Article Views I](easy/4_article_views_i.sql) |
+| 5 | [Invalid Tweets](easy/5_invalid_tweets.sql) |
 
 ## Run your code
 
@@ -59,10 +59,10 @@ The sample schema and rows are in `fixtures/`, with the same filename as their q
 
 ```sh
 sqlite3
-.read fixtures/0584_find_customer_referee.sql
+.read fixtures/2_find_customer_referee.sql
 .headers on
 .mode column
-.read easy/0584_find_customer_referee.sql
+.read easy/2_find_customer_referee.sql
 ```
 
 Write your query before loading its file. Keep the fixture and query in the same connection; use a fresh session if reloading a fixture. Exit with `.quit`.

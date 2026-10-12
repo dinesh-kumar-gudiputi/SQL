@@ -1,6 +1,7 @@
 /*
-0595. Big Countries
+3. Big Countries
 Difficulty: Easy
+Source problem: LeetCode 595
 Source: https://leetcode.com/problems/big-countries/description/
 
 Task: From World, return name, population, area when area is at least 3,000,000 OR population is at least 25,000,000.
@@ -13,7 +14,7 @@ Edgepop | 25000000 | 80000
 
 Check: Check values exactly at each threshold.
 Practice: OR and inclusive thresholds. **Time:** 5 minutes.
-Sample schema and input: fixtures/0595_big_countries.sql
+Sample schema and input: fixtures/3_big_countries.sql
 
 At the repository root, start sqlite3, then load the fixture and this query
 in the same connection using .read. Write your own query below this comment.
