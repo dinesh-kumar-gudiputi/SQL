@@ -1,6 +1,6 @@
 # SQL Daily Coding
 
-Focused SQL problem-solving practice for data analyst and data engineering roles. This repository contains coding questions and your attempts. Existing notes, datasets and older work live in [coding-reference](https://github.com/dinesh-kumar-gudiputi/coding-reference).
+Focused SQL problem-solving practice for data analyst and data engineering roles. This repository contains only daily coding questions and your attempts.
 
 ## Structure
 
@@ -67,7 +67,7 @@ sqlite3
 
 Write your query before loading its file. Keep the fixture and query in the same connection; use a fresh session if reloading a fixture. Exit with `.quit`.
 
-New practice targets ANSI/PostgreSQL SQL, and the current fixtures also run in SQLite. For string length, use `CHAR_LENGTH(content)` in PostgreSQL and `LENGTH(content)` in SQLite. Original MySQL learning material stays in coding-reference.
+New practice targets ANSI/PostgreSQL SQL, and the current fixtures also run in SQLite. For string length, use `CHAR_LENGTH(content)` in PostgreSQL and `LENGTH(content)` in SQLite. Choose the database dialect explicitly before running a question.
 
 ## Weekday training
 
