@@ -10,8 +10,19 @@ name: Asha, Cara, Eva (any order).
 
 Check: Do not accidentally exclude rows whose referee_id is NULL.
 Practice: NULL and filtering. **Time:** 7 minutes.
-Sample schema and input: fixtures/2_find_customer_referee.sql
+Sample schema and rows: included in the setup section below.
 
-At the repository root, start sqlite3, then load the fixture and this query
-in the same connection using .read. Write your own query below this comment.
+Run this file in a fresh SQLite session. Write your query in the answer section.
 */
+
+-- SAMPLE DATA SETUP
+-- Run once in a fresh practice database/connection.
+CREATE TEMP TABLE Customer (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    referee_id INTEGER
+);
+INSERT INTO Customer VALUES (1, 'Asha', NULL), (2, 'Ben', 2), (3, 'Cara', 1), (4, 'Dev', 2), (5, 'Eva', NULL);
+
+-- YOUR ANSWER
+-- Write your query here.

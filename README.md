@@ -9,8 +9,7 @@ SQL/
 ├── README.md
 ├── easy/
 ├── medium/
-├── hard/
-└── fixtures/
+└── hard/
 ```
 
 | Difficulty | Questions |
@@ -55,22 +54,23 @@ Example commit: `practice: solve question 2 find customer referee`
 
 ## Run your code
 
-The sample schema and rows are in `fixtures/`, with the same filename as their query. From the repository root, the existing SQLite client on this Mac can run a question like this:
+Each numbered SQL file contains the question, source, expected output, executable sample-table setup and your answer section. There are no separate sample-data files.
+
+From the repository root, after writing your query below `-- YOUR ANSWER`:
 
 ```sh
 sqlite3
-.read fixtures/2_find_customer_referee.sql
 .headers on
 .mode column
 .read easy/2_find_customer_referee.sql
 ```
 
-Write your query before loading its file. Keep the fixture and query in the same connection; use a fresh session if reloading a fixture. Exit with `.quit`.
+Use a fresh SQLite session for each run; exit with `.quit`. On a practice website, submit only your answer query, without the sample setup.
 
-New practice targets ANSI/PostgreSQL SQL, and the current fixtures also run in SQLite. For string length, use `CHAR_LENGTH(content)` in PostgreSQL and `LENGTH(content)` in SQLite. Choose the database dialect explicitly before running a question.
+New practice targets ANSI/PostgreSQL SQL, and the included sample setup also runs in SQLite. For string length, use `CHAR_LENGTH(content)` in PostgreSQL and `LENGTH(content)` in SQLite. Choose the database dialect explicitly before running a question.
 
 ## Weekday training
 
 The coding chat runs Monday–Friday at **19:00 Europe/Berlin**, with 5 SQL questions. Difficulty increases based on reviewed work, with later recall of earlier questions. Approximately 90 minutes for both languages together is a flexible target.
 
-Questions and starter files can be prepared in the local checkout. Your own reviewed attempts are committed and pushed by you.
+Questions and starter files are automatically added to GitHub by the weekday schedule. Your own reviewed attempts are committed and pushed by you.
