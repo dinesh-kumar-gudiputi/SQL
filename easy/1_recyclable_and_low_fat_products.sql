@@ -25,4 +25,6 @@ CREATE TEMP TABLE Products (
 INSERT INTO Products VALUES (10, 'Y', 'Y'), (11, 'Y', 'N'), (12, 'N', 'Y'), (13, 'Y', 'Y');
 
 -- YOUR ANSWER
-d
+SELECT product_id
+FROM Products
+WHERE low_fats = 'Y' AND recyclable = 'Y';  

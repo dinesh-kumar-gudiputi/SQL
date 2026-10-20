@@ -26,3 +26,6 @@ INSERT INTO Customer VALUES (1, 'Asha', NULL), (2, 'Ben', 2), (3, 'Cara', 1), (4
 
 -- YOUR ANSWER
 -- Write your query here.
+SELECT name
+FROM Customer
+WHERE referee_id IS NULL OR referee_id != 2;

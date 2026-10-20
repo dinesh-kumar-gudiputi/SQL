@@ -30,3 +30,7 @@ INSERT INTO Views VALUES
 
 -- YOUR ANSWER
 -- Write your query here.
+SELECT DISTINCT author_id AS id
+FROM Views
+WHERE author_id = viewer_id
+ORDER BY id;
